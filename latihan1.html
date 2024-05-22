@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mediaku</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="model.css" />
+
+    <header>
+      <h1>Quiz Level 1 </h1>
+      <div class="box-timer">
+        <p id="timer1" class="timer">Jika sudah siap silahkan klik mulai (waktu 600 detik / 10 menit)</p>
+        <button id="tombolTimer" class="tombolTimer" onclick = "update_display_call()" style="display: block;">Mulai</button>
+      </div>
+    </header>
+    <form action="" method="POST" name="myquiz">
+      <div class="soal">1. Suatu cara untuk mewakili besaran dari suatu item fisik, disebut …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan1">a. Hexadecimal<br>
+        <input type="radio" value="b" id="c1" name="pertanyaan1">b. Sistem bilangan<br>
+        <input type="radio" value="c" name="pertanyaan1">c. Desimal<br>
+        <input type="radio" value="d" name="pertanyaan1">d. Biner<br>
+        <input type="radio" value="e" name="pertanyaan1">e. Sistem bilangan basis 8<br>
+      </div>
+      
+      <br>
+
+      <div class="soal"> 2. Sistem bilangan terdiri dari 10 digit adalah …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan2">a.  Biner<br>
+        <input type="radio" value="b" id="c2" name="pertanyaan2">b.	Desimal<br>
+        <input type="radio" value="c" name="pertanyaan2">c. Hexadecimal<br>
+        <input type="radio" value="d" name="pertanyaan2">d.	Bilangan basis 16<br>
+        <input type="radio" value="e" name="pertanyaan2">e.	Bilangan basis 2<br>
+      </div>
+    
+      <br>
+
+      <div class="soal"> 3. Biner adalah ….</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan3">a.	Sistem bilangan yang terdiri dari 10 digit<br>
+        <input type="radio" value="b" name="pertanyaan3">b.	Sistem bilangan basis 8<br>
+        <input type="radio" value="c" id="c3" name="pertanyaan3">c.	Sistem bilangan yang terdiri dari dua simbol yaitu 0 dan 1 <br>
+        <input type="radio" value="d" name="pertanyaan3">d.	Nilai yang bulat<br>
+        <input type="radio" value="e" name="pertanyaan3">d.	Sistem bilangan yang terdiri dari 16 simbol<br>
+      </div>
+  
+      <br>
+
+      <div class="soal">4. Bentuk nilai bilangan desimal ada, yaitu …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" id="c4" name="pertanyaan4">a.	Pecahan desimal dan Integer decimal <br>
+        <input type="radio" value="b" name="pertanyaan4">b.	 Pecahan desimal dan Position value<br>
+        <input type="radio" value="c" name="pertanyaan4">c.	 Integer decimal dan Absolut value<br>
+        <input type="radio" value="d" name="pertanyaan4">d.	 Position value dan Absolut value<br>
+        <input type="radio" value="e" name="pertanyaan4">e.	 Absolut value dan pecahan desimal<br>
+      </div>
+  
+      <br>
+
+      <div class="soal">5. Setiap simbol dalam sistem bilangan desimal ada 2, yaitu …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan5">a.Pecahan desimal dan Integer decimal<br>
+        <input type="radio" value="b" id="c5" name="pertanyaan5">b.	 Position value dan Absolut value <br>
+        <input type="radio" value="c" name="pertanyaan5">c.	Absolut value dan pecahan desimal<br>
+        <input type="radio" value="d" name="pertanyaan5">d.	Fraction decimal dan Position value<br>
+        <input type="radio" value="e" name="pertanyaan5">e. Integer decimal dan Absolut value<br>
+      </div>
+  
+      <br>
+
+      <div class="soal">6. Nilai mutlak dari masing – masing digit bilangan adalah …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" id="c6" name="pertanyaan6">a.	Abssolut value<br>
+        <input type="radio" value="b" name="pertanyaan6">b.	Sistem bilangan<br>
+        <input type="radio" value="c" name="pertanyaan6">c.	Pecahan desimal<br>
+        <input type="radio" value="d" name="pertanyaan6">d.	Fraction decimal<br>
+        <input type="radio" value="e" name="pertanyaan6">e.	nteger decima<br>
+      </div>
+  
+      <br>
+
+      <div class="soal">7.	1 byte sama dengan … </div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" id="c7" name="pertanyaan7">a.	 8 bit <br>
+        <input type="radio" value="b" name="pertanyaan7">b.	10 bit <br>
+        <input type="radio" value="c" name="pertanyaan7">c.	4 bit<br>
+        <input type="radio" value="d" name="pertanyaan7">d.	2 bit<br>
+        <input type="radio" value="e" name="pertanyaan7">e.	2 bit<br>
+      </div>
+  
+      <br>
+
+      <div class="soal">8.	Simbol E dalam heksadesimal adalah …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan8">a. 11<br>
+        <input type="radio" value="b" id="c8" name="pertanyaan8">14<br>
+        <input type="radio" value="c" name="pertanyaan8">c.	12<br>
+        <input type="radio" value="d" name="pertanyaan8">d.	16<br>
+        <input type="radio" value="e" name="pertanyaan8">e.	21br>
+      </div>
+  
+      <br>
+
+      <div class="soal">9.	Teknik pembagian yang berurutan dapat juga digunakan untuk mengubah bilangan desimal menjadi bilangan …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" id="c9" name="pertanyaan9">a. Heksadesimal <br>
+        <input type="radio" value="b" name="pertanyaan9">b.	Oktal<br>
+        <input type="radio" value="c" name="pertanyaan9">c.	Pecahan<br>
+        <input type="radio" value="d" name="pertanyaan9">d.	Bilangan basis 8<br>
+        <input type="radio" value="e" name="pertanyaan9">e.	Biner<br>
+      </div>
+  
+      <br>
+
+      <div class="soal">10.	Cara menjumlahkan bobot masing – masing posisinya yang bernilai 1 merupakan konversi bilangan bine ke bilangan …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan10">a. Okta<br>
+        <input type="radio" value="b" name="pertanyaan10">b. Heksadesimal<br>
+        <input type="radio" value="c" id="c10" name="pertanyaan10">c. Desimal <br>
+        <input type="radio" value="d" name="pertanyaan10">d. Pecahan<br>
+        <input type="radio" value="e" name="pertanyaan10">e. Bilangan basis 8<br>
+      </div>
+  
+      <br>
+
+      <div class="soal">11.  Bilangan biner dari 88(10) yaitu…</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan11">a. 1010101<br>
+        <input type="radio" value="b" name="pertanyaan11">b. 1101101<br>
+        <input type="radio" value="c" name="pertanyaan11">c. 1001010<br>
+        <input type="radio" value="d" id="c11" name="pertanyaan11">d. 1011000 <br>
+        <input type="radio" value="e" name="pertanyaan11">e. 1111011<br>
+
+      </div>
+    
+      <br>
+
+      <div class="soal">12.  Bilangan 3ABF(16) ke biner adalah …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan12">a. 1001 1010 1110 1010 <br>
+        <input type="radio" value="b" name="pertanyaan12">b. 1010 1001 1010 1111<br>
+        <input type="radio" value="c" name="pertanyaan12">c. 0011 1010 1011 1101 <br>
+        <input type="radio" value="d" id="c12" name="pertanyaan12">d. 0011 1010 1011 1111 <br>
+        <input type="radio" value="e" name="pertanyaan12">e. 0101 1011 1001 1110 <br>
+      </div>
+    
+      <br>
+
+      <div class="soal">13. Bilangan desimal dari 10111(2) adalah …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan13">a. 22 <br>
+        <input type="radio" value="b" name="pertanyaan13">b. 184<br>
+        <input type="radio" value="c" name="pertanyaan13">c. 88<br>
+        <input type="radio" value="d" id="c13" name="pertanyaan13">d. 23<br>
+        <input type="radio" value="e" name="pertanyaan13">e. 55<br>
+      </div>
+    
+      <br>
+
+      <div class="soal">14. Bilangan heksadesimal dari 1101 1111 1010 1100 0100(2) adalah...</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan14">a. EFDC4<br>
+        <input type="radio" value="b" name="pertanyaan14">b. DFBC4<br>
+        <input type="radio" value="c" id="c14" name="pertanyaan14">c. DFAC4<br>
+        <input type="radio" value="d" name="pertanyaan14">d. ABCD4<br>
+        <input type="radio" value="e" name="pertanyaan14">e. DEB4<br>
+      </div>
+    
+      <br>
+
+      <div class="soal">15.  Membagi bilangan desimal yang akan diubah, secara berturut – turut dengan pembagian 2, dengan memperhatikan sisa pembagiannya. Merupakan cara konversi bilangan desima ke …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan15">a. oktal<br>
+        <input type="radio" value="b" name="pertanyaan15">b. heksadesimal<br>
+        <input type="radio" value="c" id="c15" name="pertanyaan15">c. biner<br>
+        <input type="radio" value="d" name="pertanyaan15">d. bilangan basis 8<br>
+        <input type="radio" value="e" name="pertanyaan15">e. pechan<br>
+      </div>
+    </form>
+    <div class="submit">
+      <button class="back"><a href="halamanAwal.php">Keluar</a></button>
+      <button class="enter" onclick="totalNilai()"><a href="">Kirim</a></button>
+    </div>
+    <div class="footer">
+      <p>Quis Online</p>
+    </div>
+    <script src="volue1.js"></script>
+  </body>
+</html>
+
