@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mediaku</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="model.css" />
+
+    <header>
+      <h1>Quiz Level 2</h1>
+      <div class="box-timer">
+        <p id="timer1" class="timer">Jika sudah siap silahkan klik mulai (waktu 900 detik / 15 menit)</p>
+        <button id="tombolTimer" class="tombolTimer" onclick="update_display_call()" style="display: block;">Mulai</button>
+      </div>
+    </header>
+    <form action="" method="POST" name="myquiz">
+      <div class="soal">1. Yang bukan termasuk kedalam fungsi relasi logik adalah …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan1">a. AND<br>
+        <input type="radio" value="b" name="pertanyaan1">b. EQUIVALENCE<br>
+        <input type="radio" value="c" id="c1" name="pertanyaan1">c. EX-NOT <br>
+        <input type="radio" value="d" name="pertanyaan1">d.	NOT<br>
+        <input type="radio" value="e" name="pertanyaan1">e.	NOT<br>
+      </div>
+      
+      <br>
+
+      <div class="soal">2. Gerbang logika adalah …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" id="c2" name="pertanyaan2">a.	Rangkaian dengan satu atau lebih dari satu sinyal masukan tetapi hanya menghasilkan satu sinyal berupa tegangan tinggi atau tegangan rendah<br>
+        <input type="radio" value="b" name="pertanyaan2">b. Suatu rangkaian dengan satu sinyal masukan tetapi menghasilkan dua sinyal berupa tegangan tinggi atau tegangan rendah<br>
+        <input type="radio" value="c" name="pertanyaan2">c.	Logika yang dilengkapi dengan simbol dan karakteristik blok bangunan untuk komputer yang rumit<br>
+        <input type="radio" value="d" name="pertanyaan2">d.	Rangkaian logika yang menggambarkan hubungan antara masukan dan keluaran<br>
+        <input type="radio" value="e" name="pertanyaan2">e. Suatu rangkaian logika yang dapat dianalisis menggunakan aljabar Boole dengan mengacu pada suatu persamaan logika<br>
+      </div>
+    
+      <br>
+
+      <div class="soal">3. Gerbang logika beroperasi berdasarkan sistem bilangan biner yaitu …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan3">a.	Menggunakan aljabar boolea dengan mengacu pada suatu persamaan logika yang akan menghasilakan sebuah sinyal<br>
+        <input type="radio" value="b" name="pertanyaan3">b.	Berdasarkan logika dasar dan simbol karakteristik yang rumit<br>
+        <input type="radio" value="c" id="c3" name="pertanyaan3">c.	Bilangan yang hanya memiliki 2 kode simbol yaitu 0 dan 1 dengan menggunakan teori aljabar Boolean<br>
+        <input type="radio" value="d" name="pertanyaan3">d.	Semua jawaban salah<br>
+        <input type="radio" value="e" name="pertanyaan3">e.	Gambaran hubungan antara Input dan Output<br>
+      </div>
+  
+      <br>
+
+      <div class="soal">4. Relasi antara paling sedikit 22 variabel masukan dan sebuah variabel keluaran, disebut …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" id="c4" name="pertanyaan4">a.  Operasi AND<br>
+        <input type="radio" value="b" name="pertanyaan4">b.	 Operasi NAND<br>
+        <input type="radio" value="c" name="pertanyaan4">c.	Operasi OR<br>
+        <input type="radio" value="d" name="pertanyaan4">d.	Operasi NOT<br>
+        <input type="radio" value="e" name="pertanyaan4">e. Operasi EX-OR<br>
+      </div>
+  
+      <br>
+
+      <div class="soal">5. Gerbang AND akan menghasilkan nilai TRUE hanya jika semua inputnya bernilai …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan5">a.	Negatif<br>
+        <input type="radio" value="b" name="pertanyaan5">b.	0<br>
+        <input type="radio" value="c" name="pertanyaan5">c.	Positif<br>
+        <input type="radio" value="d" id="c5" name="pertanyaan5">d.	True<br>
+        <input type="radio" value="e" name="pertanyaan5">e.	False<br>
+      </div>
+  
+      <br>
+
+      <div class="soal">6. Perhatikan tabel dibawah ini!</div>
+      <img src="https://berbagiruang.com/wp-content/uploads/2021/09/Sistem-Komputer.jpg" alt="">
+      <div class="soal">Tabel diatas merupakan sebuah tabel kebenaran dari …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan6">a.	AND<br>
+        <input type="radio" value="b" id="c6" name="pertanyaan6">b.	 OR <br>
+        <input type="radio" value="c" name="pertanyaan6">c.	X-OR<br>
+        <input type="radio" value="d" name="pertanyaan6">d.	NAND<br>
+        <input type="radio" value="e" name="pertanyaan6">e.	NOT<br>
+      </div>
+  
+      <br>
+
+      <div class="soal">7. Ā = X, merupakan persamaan fungsi dari operasi …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" id="c7" name="pertanyaan7">a.	AND <br>
+        <input type="radio" value="b" name="pertanyaan7">b.	NOT <br>
+        <input type="radio" value="c" name="pertanyaan7">c.	OR<br>
+        <input type="radio" value="d" name="pertanyaan7">d.	EX-OR<br>
+        <input type="radio" value="e" name="pertanyaan7">e.	NOR<br>
+      </div>
+  
+      <br>
+
+      <div class="soal">8. X = A + B merupakan fungsi dari gerbang logika …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" id="c8" name="pertanyaan8">a.	Logika kombinasi dan logika sekuensial<br>
+        <input type="radio" value="b" name="pertanyaan8">b.	Logika pecahan dan logika sekuensial<br>
+        <input type="radio" value="c" name="pertanyaan8">c.	Logika gabungan dan logika pecahan<br>
+        <input type="radio" value="d" name="pertanyaan8">d.	Gerbang logika dan logika dasar<br>
+        <input type="radio" value="e" name="pertanyaan8">e.	Gerbang logika dan logika kombinasi<br>
+      </div>
+  
+      <br>
+
+      <div class="soal">9. Didalam sebuah kode script ada tertulis seperti ini document.bgColor="red",apakah arti dari kode script tersebut...</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" id="c9" name="pertanyaan9">a. Memberikan warna merah pada background page<br>
+        <input type="radio" value="b" name="pertanyaan9">b. Memberikan warna merah untuk tulisan pada page<br>
+        <input type="radio" value="c" name="pertanyaan9">c. Memberikan warna merah pada link document<br>
+        <input type="radio" value="d" name="pertanyaan9">d. Memberikan warna merah pada link dari halaman web<br>
+      </div>
+    
+      <br>
+
+      <div class="soal">10.  Sebuah dekoder harus memenuhi syarat perancangan …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan10">a. m < n<br>
+        <input type="radio" value="b" id="c10" name="pertanyaan10">b. m < 2n<br>
+        <input type="radio" value="c" name="pertanyaan10">c. m > 2n<br>
+        <input type="radio" value="d" name="pertanyaan10">d. m > n<br>
+        <input type="radio" value="e" name="pertanyaan10">e. m = n<br>
+      </div>
+    
+      <br>
+
+      <div class="soal">Rangkaian logika kombinasi yang berfungsi untuk mengubah atau mengodekan suatu sinyal mengubah atau mengodekan suatu sinyal masukan diskrit menjadi keluaran kode biner adalah …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan11">a. Dekoder<br>
+        <input type="radio" value="b" name="pertanyaan11">b. Flip-flop<br>
+        <input type="radio" value="c" name="pertanyaan11">c. Multiplexere<br>
+        <input type="radio" value="d" id="c11" name="pertanyaan11">d. Enkoder <br>
+        <input type="radio" value="e"  name="pertanyaan11">e. Demultiplexer<br>
+      </div>
+    
+      <br>
+
+      <div class="soal">12. Yang tidak termasuk jenis flip – flop adalah …</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan12">a. RS flip-flop<br>
+        <input type="radio" value="b" id="c12" name="pertanyaan12">b. v flip-flop <br>
+        <input type="radio" value="c" name="pertanyaan12">c. D flip-flop<br>
+        <input type="radio" value="d" name="pertanyaan12">d. T flip-flop<br>
+        <input type="radio" value="e" name="pertanyaan12">e. JK flip-flop<br>
+      </div>
+
+      <div class="soal">13. Apa sintaks javascript yang benar untuk mengubah konten elemen HTML di bawah ini ?<br>&#60;p id=”demo”&#62; Ini adalah demonstrasi.&#60;/p&#62;</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan13">a. document.getElementByName(“p”).innerHTML = “Hello World!”;<br>
+        <input type="radio" value="b" name="pertanyaan13">b. document.getElement (“p”).innerHTML = “Hello World!”;<br>
+        <input type="radio" value="c" name="pertanyaan13">c. #demo.innerHTML = “Hello World!”;<br>
+        <input type="radio" value="d" id="c13" name="pertanyaan13">d. document.getElementById(“demo”).innerHTML = “Hello World!”;<br>
+      </div>
+    
+      <br>
+
+      <div class="soal">14. Script dari javasscript dapat di tempatkan pada...</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" name="pertanyaan14">a. Body, Header, Title<br>
+        <input type="radio" value="b" name="pertanyaan14">b. Header, Title, Html<br>
+        <input type="radio" value="c" name="pertanyaan14">c. Title, Body, External Fil<br>
+        <input type="radio" value="d" id="c14" name="pertanyaan14">d. Body, Header, External File<br>
+      </div>
+
+      <br>
+
+      <div class="soal">15. Bagaimana cara menulis pernyataan IF di JavaScript...</div>
+      <div class="pilihan-jawaban">
+        <input type="radio" value="a" id="c15" name="pertanyaan15">a. if (i == 5)<br>
+        <input type="radio" value="b" name="pertanyaan15">b. if i = 5<br>
+        <input type="radio" value="c" name="pertanyaan15">b. if i = 5<br>
+        <input type="radio" value="d" name="pertanyaan15">d. if i + 5<br>
+      </div>
+    
+    </form>
+    <div class="submit">
+      <button class="back"><a href="halamanAwal.php">Keluar</a></button>
+      <button class="enter" onclick="totalNilai()"><a href="">Kirim</a></button>
+    </div>
+    <div class="footer">
+      <p>Quis Online</p>
+    </div>
+    <script src="volue2.js"></script>
+    
+  </body>
+</html>
